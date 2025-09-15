@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FolioKD</title>
+    <link rel="stylesheet" href="portfolio.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap">
+  
+</head>
+<body>
+    
+    <div class="outer-border">
+        <div id="popup-message" class="popup">
+            <p>Message sent successfully! 😊</p>
+        </div>
+        <div class="star"></div>
+        <header class="navbar">
+            <div class="logo" style="color: #E879F9;font-size: 30px;">
+                <span>J</span>
+                <span>o</span>
+                <span>s</span>
+                <span>e</span>
+                <span>p</span>
+                <span>h</span>
+                <span>'</span>
+                <span>s</span>
+                <span> </span>
+                <span>P</span>
+                <span>o</span>
+                <span>r</span>
+                <span>t</span>
+                <span>f</span>
+                <span>o</span>
+                <span>l</span>
+                <span>i</span>
+                <span>o</span>
+            </div>
+            <div class="menu-toggle" id="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+
+        <section class="hero-section" id="home">
+            <div class="innerbox">
+                <div class="icons">
+                    <div class="icon-circle"><i class="fas fa-code"></i></div>
+                    <div class="icon-circle"><i class="fas fa-cubes"></i></div>
+                    <div class="icon-circle"><i class="fas fa-brain"></i></div>
+                </div>
+                
+                <div class="greet">
+                    <p>Welcome To My <br> <span>PortFolio Website</span></p>
+                </div>
+
+                <button class="linkedin-button" onclick="window.open('https://www.linkedin.com/in/joseph-j-b63ab42a3/', '_blank')">
+                    <i class="fab fa-linkedin"></i> Linkedin.com
+                </button>
+            </div>
+        </section>
+
+        <section class="hero-section-2" id="about">
+            <div class="leftSide">
+                <h3 style="margin: 0; padding: 0; font-weight: 400;">Hello, I'm</h3>
+                <h1 class="color gradient" style="margin: 5px 0;">Joseph Janga</h1>
+                <p style="font-size: 20px; margin: 0; font-weight: 600; color: #ccc;">
+                Full-Stack Developer & UI/UX Designer
+                </p>
+
+                <ul style="margin-top: 15px; padding-left: 20px; line-height: 1.8;">
+                    <li style="font-size: small;">I design and develop modern, responsive, and SEO-friendly websites.</li>
+                    <li style="font-size: small;">Completed <span style="font-weight: 700; color: #ff4ac4;">50+ real-world projects</span> with great client satisfaction.</li>
+                    <li style="font-size: small;">Passionate about creating beautiful interfaces and smooth user experiences.</li>
+                </ul>
+
+                <div class="icons" style="margin-top: 20px;">
+                    <div class="icon-circle" onclick="window.open('https://www.linkedin.com/in/joseph-j-b63ab42a3/', '_blank')"><i class="fa-brands fa-linkedin icon linkedin"></i></div>
+                    <div class="icon-circle" onclick="window.open('https://github.com/23MHCQ05254', '_blank')"><i class="fa-brands fa-github icon github"></i></div>
+
+                    <div class="icon-circle" onclick="window.open('https://stackoverflow.com/tour', '_blank')"><i class="fa-brands fa-stack-overflow icon"></i></div>
+                </div>
+            </div>
+
+            <div class="rightSide">
+                <img src="profile.png" alt="Joseph Janga" class="profile-img">
+            </div>
+        </section>
+
+        <section class="about">
+            <div class="aboutCont">
+                <h1 style="color: #fe6ccd;font-size: 40px; margin: 0;">About me !!</h1>
+                <p>
+                    I’m a Full Stack Developer skilled in building scalable, secure, and high-performance applications. <br>
+                    Proficient in JavaScript, React, Node.js,Django and SQL, I craft responsive UIs and optimized server-side solutions. <br>
+                    Passionate about problem-solving and performance tuning, I thrive in collaborative environments and stay updated with industry trends to deliver cutting-edge solutions.
+                </p>
+                <div class="cvdwdn"><i class="fa-solid fa-file-lines"></i>  Download CV</div>
+            </div>
+        </section>
+        <section class="portfolioShowcase" id="portfolio">
+            <h1 class="psc" >Portfolio Showcase</h1>
+            <p class="portfolio-description">
+                Explore my journey through real-world projects, certifications, and technical expertise. <br>
+                Each section highlights milestones from my continuous learning and development path.
+            </p>
+            <div class="portfolio-buttons">
+                <button data-target="content-1" class="portfolio-btn projects-btn active">
+                    <i class="fas fa-code"></i> Projects
+                </button>
+                <button data-target="content-3" class="portfolio-btn skill-btn">
+                    <i class="fas fa-brain"></i> My Skill
+                </button>
+                <button data-target="content-2" class="portfolio-btn certificate-btn">
+                    <i class="fas fa-certificate"></i> Certificates
+                </button>
+                <button data-target="content-5" class="portfolio-btn coding-prof">
+                    <i class="fa-solid fa-terminal mr-2"></i>Coding Profiles
+                </button>
+            </div>
+        </section>
+
+        <div class="content active" id="content-1" id="contact">
+            <div class="c1 c-1-div"  onclick="window.open('https://github.com/', '_blank')" style="cursor: pointer;">
+                <div>
+                    <div class="img">
+                        <img src="project.png" alt="image bookswap">
+                    </div>
+                    <p>Campus BookSwap</p>
+                    <p>This project is a dynamic and user-friendly web application for book enthusiasts, enabling them to swap, sell, or rent books within a community.</p>
+                    <div class="technologies">
+                        <img src="icons/html.png" alt="" class="html" style="border: 2px solid red;">
+                        <img src="icons/css.png" alt="" class="html" style="border: 2px solid red;">
+                        <img src="icons/javascript.png" alt="" style="border: 2px solid yellow;" >
+                        <img src="icons/sql.png" alt="" style="border: 2px solid white" >
+                        <img src="icons/dj.png" alt="" style="border: 2px solid green;">
+                        <img src="icons/git.png" alt="" style="border: 2px solid red;">
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="c1 c-1-div"  onclick="window.open('https://github.com/', '_blank')" style="cursor: pointer;" >
+                <div>
+                    <div class="img" >
+                        <img src="project2.png" alt="">
+                        
+                    </div>
+                    <p>Dynemic Portfolio</p>
+                    <p>My portfolio website is a personal showcase of my skills, projects, and achievements with a clean, responsive design.
+                        It highlights my coding profiles, certifications, and projects like BookSwap in an interactive way.</p>
+                     <div class="technologies">
+                        <img src="icons/html.png" alt=""  style="border: 2px solid red;">
+                        <img src="icons/css.png" alt="" style="border: 2px solid red;">
+                        <img src="icons/javascript.png" alt="" style="border: 2px solid yellow;" >
+        
+                        
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="content" id="content-3">
+         <div class="c-3-div">
+            <h2 class="skill-category-title">Programming Languages</h2>
+            <div class="skills-grid">
+                <div class="logo cl"><img src="icons/c.png" alt="C++ icon"></div>
+                <div class="logo jl"><img src="icons/java.png" alt="Java icon"></div>
+                <div class="logo pl"><img src="icons/python.png" alt="Python icon"></div>
+            </div>
+
+            <h2 class="skill-category-title">Front-End Development</h2>
+            <div class="skills-grid">
+                <div class="logo hl"><img src="icons/html.png" alt="HTML icon"></div>
+                <div class="logo csl"><img src="icons/css.png" alt="CSS icon"></div>
+                <div class="logo jsl"><img src="icons/javascript.png" alt="JavaScript icon"></div>
+                <div class="logo rl"><img src="icons/react.png" alt="React icon"></div>
+            </div>
+
+            <h2 class="skill-category-title">Back-End Development</h2>
+            <div class="skills-grid">
+                <div class="logo nl"><img src="icons/node.png" alt="Node.js icon"></div>
+                <div class="logo dl"><img src="icons/dj.png" alt="Django icon"></div>
+                <div class="logo sl"><img src="icons/sql.png" alt="SQL icon"></div>
+            </div>
+            
+            <h2 class="skill-category-title">Version Control</h2>
+            <div class="skills-grid">
+                <div class="logo gl"><img src="icons/git.png" alt="Git icon"></div>
+            </div>
+        </div>
+    </div>
+        
+
+
+       <div class="content" id="content-2">
+            <div class="c2-div">
+                <div class="certificate">
+                    <img src="certificates/thub.png" alt="Certificate 1">
+                    <p>THub Training</p>
+                </div>
+                <div class="certificate">
+                    <img src="certificates/intrnsp.png" alt="Certificate 2">
+                    <p>Summer Internship</p>
+                </div>
+                <div class="certificate">
+                    <img src="certificates/html.png" alt="Certificate 3">
+                    <p>HTML</p>
+                </div>
+                <div class="certificate">
+                    <img src="certificates/css.png" alt="Certificate 4">
+                    <p>CSS</p>
+                </div>
+                <div class="certificate">
+                    <img src="certificates/js-1.png" alt="Certificate 5">
+                    <p>JavaScript-1</p>
+                </div>
+                <div class="certificate">
+                    <img src="certificates/js-2.png" alt="Certificate 5">
+                    <p>JavaScript-2</p>
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="content" id="content-5">
+            <div class="coding-profiles-container">
+                <a href="https://leetcode.com/" target="_blank" class="profile-card">
+                    <img src="icons/leetcode.png" class="cpi leetcode-icon" alt="">
+                    <h3 class="profile-title">LeetCode</h3>
+                    <p class="profile-description">
+                        Solving algorithmic challenges to sharpen data structures and algorithm skills.
+                    </p>
+                </a>
+                <a href="https://www.hackerrank.com/" target="_blank" class="profile-card">
+                    <img src="icons/hackerrank.png" class="cpi hackerrank-icon" alt="">
+                    <h3 class="profile-title">HackerRank</h3>
+                    <p class="profile-description">
+                        Practicing a wide range of coding and problem-solving skills across various domains.
+                    </p>
+                </a>
+                <a href="https://www.codechef.com/" target="_blank" class="profile-card">
+                    <img src="icons/codecheff.png" class="cpi codechef-icon" alt="">
+                    <h3 class="profile-title">CodeChef</h3>
+                    <p class="profile-description">
+                        Participating in competitive programming contests and improving logical thinking.
+                    </p>
+                </a>
+                <a href="https://www.geeksforgeeks.org/" target="_blank" class="profile-card">
+                    <img src="icons/gfg.jpg" class="cpi gfg-icon" alt="">
+                    <h3 class="profile-title">GeeksforGeeks</h3>
+                    <p class="profile-description">
+                        Building foundational knowledge and expertise in core computer science concepts.
+                    </p>
+                </a>
+            </div>
+        </div>
+        <section class="contact-section" id="contact">
+            <div class="contact-content">
+                <h1 class="contact-title">Get in Touch <span>👋</span></h1>
+                <p class="contact-description">
+                    I'm always open to new opportunities and collaborations. Feel free to reach out to me!
+                </p>
+                <div class="contact-details">
+                    <div class="contact-info">
+                        <i class="fas fa-envelope icon"></i>
+                        <a href="mailto:joseph@gmail.com">josephjanga77@gmail.com</a>
+                    </div>
+                    <div class="contact-info">
+                        <i class="fas fa-phone-alt icon"></i>
+                        <p>+91-6303978988</p>
+                    </div>
+                    <div class="contact-info">
+                        <i class="fas fa-map-marker-alt icon"></i>
+                        <p>Andhrapradesh, India</p>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </div>
+        </section>
+
+        <footer>
+            <p>&copy; 2024 Joseph Janga. All rights reserved.</p>
+        </footer>
+
+        <script>
+            const buttons = document.querySelectorAll(".portfolio-buttons button");
+            const contents = document.querySelectorAll(".content");
+
+            buttons.forEach(btn => {
+                btn.addEventListener("click", () => {
+
+                    buttons.forEach(b => b.classList.remove("active"));
+                    btn.classList.add("active");
+
+                    contents.forEach(c => c.classList.remove("active"));
+                    document.getElementById(btn.dataset.target).classList.add("active");
+                });
+            });
+
+            function createSmoke() {
+            let smoke = document.createElement("div");
+            smoke.classList.add("smoke");
+
+            smoke.style.left = Math.random() * window.innerWidth + "px";
+
+            document.body.appendChild(smoke);
+
+            setTimeout(() => smoke.remove(), 5000); 
+        }
+
+        setInterval(createSmoke, 300);
+
+
+
+
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener("click", function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute("href")).scrollIntoView({
+                behavior: "smooth"
+                });
+            });
+            });
+
+            const star = document.querySelector(".star");
+
+            let mouseX = 0, mouseY = 0;   // target mouse position
+            let dotX = 0, dotY = 0;       // actual dot position
+
+            document.addEventListener("mousemove", (e) => {
+            mouseX = e.pageX;
+            mouseY = e.pageY;
+            });
+            function animate() {
+            dotX += (mouseX - dotX) * 0.1;
+            dotY += (mouseY - dotY) * 0.1;
+
+            star.style.left = dotX + "px";
+            star.style.top = dotY + "px";
+
+            requestAnimationFrame(animate);
+            }
+            animate();
+
+            
+
+            document.querySelector(".contact-form").addEventListener("submit", function(event) {
+                event.preventDefault();
+                showPopupAndClearForm();
+            });
+            function showPopupAndClearForm() {
+                const popup = document.getElementById("popup-message");
+                const form = document.querySelector(".contact-form");
+
+                popup.classList.add("show");
+
+                setTimeout(() => {
+                    popup.classList.remove("show");
+                }, 3000); 
+
+                form.reset();
+            }
+            const sections = document.querySelectorAll(
+                '.hero-section, .hero-section-2, .about, .portfolioShowcase, .content, footer, .contact-section'
+            );
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                    } else {
+                        entry.target.classList.remove('visible');
+                    }
+                });
+            }, {
+             
+            });
+
+            sections.forEach((section) => {
+                observer.observe(section);
+            });
+            const menuToggle = document.getElementById("menu-toggle");
+            const navMenu = document.querySelector("nav ul");
+
+            menuToggle.addEventListener("click", () => {
+                navMenu.classList.toggle("show");
+            });
+
+        </script>
+    </div>
+</body>
+</html>
