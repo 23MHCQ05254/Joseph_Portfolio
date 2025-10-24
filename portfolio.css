@@ -204,7 +204,6 @@
         .icon-circle:hover {
             transform: scale(1.1);
         }
-
         .greet {
             text-align: center;
             margin-bottom: 20px;
@@ -220,18 +219,12 @@
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
-
         .greet p span {
             background: linear-gradient(-90deg , #f972af, violet ,white);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             
         }
-        
-
-       
-
-
         .linkedin-button {
             background-color: #1a1a2e;
             color: white;

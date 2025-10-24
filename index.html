@@ -18,29 +18,15 @@
         <div class="star"></div>
         <header class="navbar">
             <div class="logo" style="color: #E879F9;font-size: 30px;">
-                <span>J</span>
+                 <span>J</span>
                 <span>o</span>
                 <span>s</span>
                 <span>e</span>
                 <span>p</span>
                 <span>h</span>
-                <span>'</span>
-                <span>s</span>
-                <span> </span>
-                <span>P</span>
-                <span>o</span>
-                <span>r</span>
-                <span>t</span>
-                <span>f</span>
-                <span>o</span>
-                <span>l</span>
-                <span>i</span>
-                <span>o</span>
+               
+                
             </div>
-            <div class="menu-toggle" id="menu-toggle">
-                <i class="fas fa-bars"></i>
-            </div>
-
             <nav>
                 <ul>
                     <li><a href="#home">Home</a></li>
@@ -50,7 +36,6 @@
                 </ul>
             </nav>
         </header>
-
 
         <section class="hero-section" id="home">
             <div class="innerbox">
@@ -65,7 +50,7 @@
                 </div>
 
                 <button class="linkedin-button" onclick="window.open('https://www.linkedin.com/in/joseph-j-b63ab42a3/', '_blank')">
-                    <i class="fab fa-linkedin"></i> Linkedin.com
+                    <i class="fab fa-linkedin"></i> www.joseph.com
                 </button>
             </div>
         </section>
@@ -87,13 +72,12 @@
                 <div class="icons" style="margin-top: 20px;">
                     <div class="icon-circle" onclick="window.open('https://www.linkedin.com/in/joseph-j-b63ab42a3/', '_blank')"><i class="fa-brands fa-linkedin icon linkedin"></i></div>
                     <div class="icon-circle" onclick="window.open('https://github.com/23MHCQ05254', '_blank')"><i class="fa-brands fa-github icon github"></i></div>
-
-                    <div class="icon-circle" onclick="window.open('https://stackoverflow.com/tour', '_blank')"><i class="fa-brands fa-stack-overflow icon"></i></div>
+                    <div title="Joseph_4_5_006" class="icon-circle" onclick="window.open('https://www.instagram.com/','_blank')"><i class="fa-brands fa-instagram icon"></i></div>
                 </div>
             </div>
 
             <div class="rightSide">
-                <img src="profile.png" alt="Joseph Janga" class="profile-img">
+                <img src="profile.jpg" alt="Joseph Janga" class="profile-img">
             </div>
         </section>
 
@@ -275,7 +259,7 @@
                 <div class="contact-details">
                     <div class="contact-info">
                         <i class="fas fa-envelope icon"></i>
-                        <a href="mailto:joseph@gmail.com">josephjanga77@gmail.com</a>
+                        <a href="mailto:joseph@gmail.com">josephjanga77#gmail.com.com</a>
                     </div>
                     <div class="contact-info">
                         <i class="fas fa-phone-alt icon"></i>
@@ -377,6 +361,30 @@
 
                 form.reset();
             }
+
+
+           /*const sections = document.querySelectorAll(
+                '.hero-section, .hero-section-2, .about, .portfolioShowcase, .content, footer, .contact-section'
+            );
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                    } else {
+                        entry.target.classList.remove('visible');
+                    }
+                });
+            }, {
+                threshold: 0.1
+            });
+
+           
+            sections.forEach((section) => {
+                observer.observe(section);
+            }); */
+    // ... your existing script code ...
+
             const sections = document.querySelectorAll(
                 '.hero-section, .hero-section-2, .about, .portfolioShowcase, .content, footer, .contact-section'
             );
@@ -390,19 +398,36 @@
                     }
                 });
             }, {
-             
+                threshold: 0.2 
             });
 
             sections.forEach((section) => {
                 observer.observe(section);
             });
-            const menuToggle = document.getElementById("menu-toggle");
-            const navMenu = document.querySelector("nav ul");
 
-            menuToggle.addEventListener("click", () => {
-                navMenu.classList.toggle("show");
+            ////////////////////////////
+
+            /*document.addEventListener('DOMContentLoaded', () => {
+            const leftContent = document.getElementById('leftSide');
+            const rightContent = document.getElementById('rightSide');
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        leftContent.classList.add('in-view');
+                        rightContent.classList.add('in-view');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, {
+                threshold: 0.2
             });
+            observer.observe(hero-section-2);
+        });
+*/
 
+
+
+            
         </script>
     </div>
 </body>
